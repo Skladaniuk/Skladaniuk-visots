@@ -1,16 +1,15 @@
 .recipeList {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* Відстань між картками */
+  gap: 16px;
   justify-content: space-between;
   padding: 20px;
 }
 
 .recipeCard {
-  width: calc(
-    33.33% - 16px
-  ); /* Кожна картка займає третину ширини з відстанями */
+  width: calc(33.33% - 16px);
   background-color: #fff;
+  padding-bottom: 20px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -18,7 +17,7 @@
   text-align: center;
 
   &:hover {
-    transform: scale(1.05); /* Збільшуємо картку при наведенні */
+    transform: scale(1.05);
   }
 
   img {
@@ -41,12 +40,26 @@
 
 @media (max-width: 768px) {
   .recipeCard {
-    width: calc(50% - 16px); /* 2 елементи в рядку на маленьких екранах */
+    width: calc(50% - 16px);
   }
 }
 
 @media (max-width: 480px) {
   .recipeCard {
-    width: 100%; /* 1 елемент в рядку на мобільних екранах */
+    width: 100%;
   }
+}
+
+.favouriteButton {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.favouriteButton:hover {
+  background-color: #cc5500;
 }

@@ -77,7 +77,7 @@ const HomePage = () => {
     <div className={styles.homePage}>
       <h1>Recipes</h1>
       <button
-        className={styles.favoritesButton}
+        className={styles.favouriteButton}
         onClick={() => navigate("/favourites")}
       >
         Go to Favorites

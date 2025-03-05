@@ -5,3 +5,16 @@
     flex-wrap: wrap;
   }
 }
+.favouriteButton {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.favouriteButton:hover {
+  background-color: #cc5500;
+}
